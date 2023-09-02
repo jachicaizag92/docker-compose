@@ -1,5 +1,6 @@
 # docker-compose para instalar una base de datos en MONGO DB
 # mongodb://root:admin@localhost:27017/    ==>   se usa para conectar con gestores (studio 3t, TablePlus) locales   
+# cadena comando docker:                 docker run -d --name mongodb-container -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=admin -v /Users/johnalexanderchicaiza/Desktop/DockerMachines:/docker-entrypoint-initdb.d mongo
 version: '3.1'
 
 services:
